@@ -16,4 +16,7 @@
 - (void)setCenterX:(float)x;
 - (void)setCenterY:(float)y;
 
+- (void)JGA_alignToRightOfView:(UIView *)view withPadding:(CGFloat)padding;
+- (void)JGA_alignToBottomOfView:(UIView *)view withPadding:(CGFloat)padding;
+
 @end

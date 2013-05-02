@@ -49,4 +49,18 @@
     self.center = center;    
 }
 
+#pragma mark - RelativeFrames
+
+- (void)JGA_alignToBottomOfView:(UIView *)view withPadding:(CGFloat)padding {
+    CGRect frame = self.frame;
+    frame.origin.y = view.frame.origin.y + view.frame.size.height + padding;
+    self.frame = frame;
+}
+
+- (void)JGA_alignToRightOfView:(UIView *)view withPadding:(CGFloat)padding {
+    CGRect frame = self.frame;
+    frame.origin.y = view.frame.origin.x + view.frame.size.width + padding;
+    self.frame = frame;
+}
+
 @end
